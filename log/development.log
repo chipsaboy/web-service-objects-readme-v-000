@@ -2326,3 +2326,9 @@ AbstractController::ActionNotFound (The action 'foursquare' could not be found f
 
 
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.6ms)
+
+
+Started POST "/search" for 68.255.239.134 at 2017-10-17 20:59:48 +0000
+Cannot render console from 68.255.239.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oli+sgh7u9IFKdbhujd2Zs9HqEOROtFECQ+R+ybEEuMA+3uVoy7IENxGlKLmoAujM0YH39rTwjIDNRcOTY9nQg==", "zipcode"=>"66354", "commit"=>"Search!"}
