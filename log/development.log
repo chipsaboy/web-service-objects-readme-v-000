@@ -1696,3 +1696,18 @@ Processing by SearchesController#foursquare as HTML
   Parameters: {"utf8"=>"✓", "authenticity_token"=>"rc5nRxc6iOZmm597AXzipMllMfzzsLSlpQ2XpAEJ5s8PbaJgvG/7JL/03Thd659hNWSeYLhZp9OvNxFRakKTbg==", "zipcode"=>"77044", "commit"=>"Search!"}
   Rendered searches/search.html.erb within layouts/application (20.7ms)
 Completed 200 OK in 190ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 68.255.239.134 at 2017-10-17 20:38:59 +0000
+Cannot render console from 68.255.239.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rc5nRxc6iOZmm597AXzipMllMfzzsLSlpQ2XpAEJ5s8PbaJgvG/7JL/03Thd659hNWSeYLhZp9OvNxFRakKTbg==", "zipcode"=>"77044", "commit"=>"Search!"}
+  Rendered searches/search.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 440ms (Views: 267.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 68.255.239.134 at 2017-10-17 20:39:06 +0000
+Cannot render console from 68.255.239.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#friends as HTML
+  Rendered searches/friends.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 71ms (Views: 14.8ms | ActiveRecord: 0.0ms)
