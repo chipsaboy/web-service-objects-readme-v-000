@@ -19,5 +19,5 @@ class FoursquareService
     end
     JSON.parse(resp.body)["response"]["friends"]["items"]
   end
-  
+
 end
