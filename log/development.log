@@ -2456,3 +2456,9 @@ ActionView::MissingTemplate (Missing template searches/foursquare, application/f
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (39.5ms)
+
+
+Started POST "/search" for 68.255.239.134 at 2017-10-17 21:04:30 +0000
+Cannot render console from 68.255.239.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LIaaL078HcOaS/Nt7eMBA8PI7112hzzxQ6XyBVhjrDCOJV8I5aluAUMksS6xdHzGP8lAwT1uL4dJn3TwMyjZkQ==", "zipcode"=>"77536", "commit"=>"Search!"}
