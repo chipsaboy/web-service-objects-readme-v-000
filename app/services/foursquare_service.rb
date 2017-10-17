@@ -20,27 +20,29 @@ class FoursquareService
     JSON.parse(resp.body)["response"]["friends"]["items"]
   end
 
-end
+  def search(client_id, client_secret, zipcode, query)
+    resp = Faraday.get 'https://api.foursquare.com/v2/venues/search' do |req|
+      req.params['client_id'] = client_id
+      req.params['client_secret'] = client_secret
+      req.params['v'] = '20160201'
+      req.params['near'] = zipcode
+      req.params['query'] = query
+    end
 
-def search(client_id, client_secret, zipcode, query)
-  resp = Faraday.get 'https://api.foursquare.com/v2/venues/search' do |req|
-    req.params['client_id'] = client_id
-    req.params['client_secret'] = client_secret
-    req.params['v'] = '20160201'
-    req.params['near'] = zipcode
-    req.params['query'] = query
-  end
+    body = JSON.parse(resp.body)
 
-  body = JSON.parse(resp.body)
-
-  if resp.success?
-    @venues = body["response"]["venues"]
-  else
-    @error = body["meta"]["errorDetail"]
-  end
-  render 'search'
-
-  rescue Faraday::TimeoutError
-    @error = "There was a timeout. Please try again."
+    if resp.success?
+      @venues = body["response"]["venues"]
+    else
+      @error = body["meta"]["errorDetail"]
+    end
     render 'search'
+
+    rescue Faraday::TimeoutError
+      @error = "There was a timeout. Please try again."
+      render 'search'
+  end
+
 end
+
+
