@@ -44,5 +44,3 @@ class FoursquareService
   end
 
 end
-
-
