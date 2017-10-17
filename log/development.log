@@ -1660,3 +1660,39 @@ Started GET "/" for 68.255.239.134 at 2017-10-17 20:37:27 +0000
 Cannot render console from 68.255.239.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by SearchesController#search as HTML
   Rendered searches/search.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 840ms (Views: 839.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 68.255.239.134 at 2017-10-17 20:37:28 +0000
+Cannot render console from 68.255.239.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 68.255.239.134 at 2017-10-17 20:37:28 +0000
+Cannot render console from 68.255.239.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 68.255.239.134 at 2017-10-17 20:37:28 +0000
+Cannot render console from 68.255.239.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 68.255.239.134 at 2017-10-17 20:37:28 +0000
+Cannot render console from 68.255.239.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 68.255.239.134 at 2017-10-17 20:37:28 +0000
+Cannot render console from 68.255.239.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/search" for 68.255.239.134 at 2017-10-17 20:37:34 +0000
+Cannot render console from 68.255.239.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#search as HTML
+  Rendered searches/search.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 130ms (Views: 125.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 68.255.239.134 at 2017-10-17 20:37:38 +0000
+Cannot render console from 68.255.239.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rc5nRxc6iOZmm597AXzipMllMfzzsLSlpQ2XpAEJ5s8PbaJgvG/7JL/03Thd659hNWSeYLhZp9OvNxFRakKTbg==", "zipcode"=>"77044", "commit"=>"Search!"}
+  Rendered searches/search.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 190ms (Views: 46.3ms | ActiveRecord: 0.0ms)
