@@ -1,6 +1,8 @@
 class SearchesController < ApplicationController
 
   def search
+    foursquare = FoursquareService.new
+    @resp = foursquare.search(ENV['FOURSQUARE_CLIENT_ID'], ENV['FOURSQUARE_SECRET'], params["zipcode"], params["query"])
   end
 
   def friends
@@ -8,9 +10,4 @@ class SearchesController < ApplicationController
     @friends = foursquare.friends(session[:token])
   end
 
-  def foursquare
-    foursquare = FoursquareService.new
-    @resp = foursquare.search(ENV['FOURSQUARE_CLIENT_ID'], ENV['FOURSQUARE_SECRET'], params["zipcode"], params["query"])
-  end
-    
 end
