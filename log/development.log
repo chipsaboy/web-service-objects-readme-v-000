@@ -2480,3 +2480,9 @@ Processing by SearchesController#foursquare as HTML
   Parameters: {"utf8"=>"✓", "authenticity_token"=>"lJ+jUYYK/CGPvc2TfxxGCpzUGAKPqv0JP1b3HprdBoI2PGZ2LV+P41bSj9AjizvPYNW3nsRD7n81bHHr8ZZzIw==", "zipcode"=>"77535", "commit"=>"Search!"}
   Rendered searches/search.html.erb within layouts/application (0.6ms)
 Completed 200 OK in 134ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 68.255.239.134 at 2017-10-17 21:07:22 +0000
+Cannot render console from 68.255.239.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mn2PgM20exUg51qGG2floo/GviJzuXU2zD3R9+muqWg43kqnZuEI1/mIGMVH8Jhnc8cRvjhQZkDGB1cCguXcyQ==", "zipcode"=>"77535", "commit"=>"Search!"}
