@@ -31,14 +31,19 @@ class FoursquareService
 
     body = JSON.parse(resp.body)
 
-    if resp.success?
+    body = JSON.parse(@resp.body)
+
+    if @resp.success?
       @venues = body["response"]["venues"]
+      return [@venues, nil]
     else
       @error = body["meta"]["errorDetail"]
+      return [nil, @error]
     end
 
     rescue Faraday::TimeoutError
       @error = "There was a timeout. Please try again."
+      return [nil, @error]
   end
 
 end
