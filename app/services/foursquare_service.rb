@@ -35,15 +35,15 @@ class FoursquareService
 
     if @resp.success?
       @venues = body["response"]["venues"]
-      return [@venues, nil]
+      return @venues
     else
       @error = body["meta"]["errorDetail"]
-      return [nil, @error]
+      return @error
     end
 
     rescue Faraday::TimeoutError
       @error = "There was a timeout. Please try again."
-      return [nil, @error]
+      return @error
   end
 
 end
