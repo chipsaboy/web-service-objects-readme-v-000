@@ -1,6 +1,6 @@
 class SearchesController < ApplicationController
 
-  def search
+  def foursquare
     foursquare = FoursquareService.new
     @resp = foursquare.search(ENV['FOURSQUARE_CLIENT_ID'], ENV['FOURSQUARE_SECRET'], params["zipcode"])
   end
